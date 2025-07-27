@@ -3,48 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Cris Gamit | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm My Name Here</h1>
-    <p>Web Developer & Designer</p>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Cris Gamit</h1>
+      <p>Creative Developer | Designer | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About Me</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
-    </div>
-    <div class="project">
-      <h3>To-Do App</h3>
-      <p>A simple to-do list app to manage daily tasks.</p>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Built with HTML, CSS, and JavaScript. Showcases my personal work and skills.</p>
+      </div>
+      <div class="card">
+        <h3>To-Do App</h3>
+        <p>A responsive to-do app with task tracking, editing, and local storage support.</p>
+      </div>
+      <div class="card">
+        <h3>Weather Dashboard</h3>
+        <p>Fetches weather data using OpenWeatherMap API with real-time updates.</p>
+      </div>
     </div>
   </section>
 
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate web developer with a love for creating interactive and user-friendly websites.</p>
+    <p>I’m Cris Gamit, a passionate frontend developer with a knack for building clean, responsive, and user-focused websites. I enjoy translating ideas into real-world web solutions using modern tech like JavaScript, React, and Figma.</p>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: clgamit14@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Squarefoot-4121">crisgamit</a></p>
+    <p>Email: <a href="mailto:clgamit14@gmail.com">clgamit14@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Squarefoot-4121" target="_blank">Squarefoot-4121</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 6969 Cris Gamit</p>
+    <p>&copy; 2025 Cris Gamit. All rights reserved.</p>
   </footer>
 </body>
 </html>

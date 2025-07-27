@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Jane Doe</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do App</h3>
+      <p>A simple to-do list app to manage daily tasks.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with a love for creating interactive and user-friendly websites.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: jane.doe@example.com</p>
+    <p>GitHub: <a href="https://github.com/janedoe">janedoe</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jane Doe</p>
+  </footer>
+</body>
+</html>

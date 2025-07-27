@@ -121,4 +121,24 @@ footer {
   .overlay {
     padding: 2rem;
   }
+
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark nav {
+  background: #1f1f1f;
+}
+
+body.dark footer {
+  background: #1f1f1f;
+  color: #888;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
 }

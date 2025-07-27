@@ -6,6 +6,7 @@
   <title>Cris Gamit | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -29,18 +30,18 @@
   </nav>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>Portfolio Website</h3>
         <p>Built with HTML, CSS, and JavaScript. Showcases my personal work and skills.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>To-Do App</h3>
         <p>A responsive to-do app with task tracking, editing, and local storage support.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>Weather Dashboard</h3>
         <p>Fetches weather data using OpenWeatherMap API with real-time updates.</p>
       </div>
@@ -48,13 +49,13 @@
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I’m Cris Gamit, a passionate frontend developer with a knack for building clean, responsive, and user-focused websites. I enjoy translating ideas into real-world web solutions using modern tech like JavaScript, React, and Figma.</p>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:clgamit14@gmail.com">clgamit14@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Squarefoot-4121" target="_blank">Squarefoot-4121</a></p>
@@ -64,12 +65,14 @@
   <footer>
     <p>&copy; 2025 Cris Gamit. All rights reserved.</p>
   </footer>
-  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
   const toggleBtn = document.getElementById('theme-toggle');
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
   });
+  AOS.init();
 </script>
 </body>
 </html>

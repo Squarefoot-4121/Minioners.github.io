@@ -6,7 +6,9 @@
   <title>Cris Gamit | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
 
@@ -17,7 +19,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle">Toggle Dark Mode</button>
+    <button id="theme-toggle"><span id="theme-icon">🌙</span> Toggle Dark Mode</button>
   </nav>
 
   <!-- Hero Section -->
@@ -29,21 +31,34 @@
     </div>
   </header>
 
+  <!-- Highlights -->
+  <section class="highlights" data-aos="fade-up">
+    <div class="stat">3+ Projects</div>
+    <div class="stat">1 Year of Experience</div>
+    <div class="stat">100% Client Satisfaction</div>
+  </section>
+
   <!-- Projects -->
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="card" data-aos="zoom-in">
+      <div class="card" data-aos="flip-left">
+        <img src="images/portfolio-thumb.png" alt="Portfolio Preview" class="project-thumb"/>
         <h3>Portfolio Website</h3>
         <p>Built with HTML, CSS, and JavaScript. Showcases my personal work and skills.</p>
+        <a href="#" class="btn">View Live</a>
       </div>
-      <div class="card" data-aos="zoom-in">
+      <div class="card" data-aos="flip-left">
+        <img src="images/todo-thumb.png" alt="To-Do App Preview" class="project-thumb"/>
         <h3>To-Do App</h3>
         <p>A responsive to-do app with task tracking, editing, and local storage support.</p>
+        <a href="#" class="btn">View Live</a>
       </div>
-      <div class="card" data-aos="zoom-in">
+      <div class="card" data-aos="flip-left">
+        <img src="images/weather-thumb.png" alt="Weather Dashboard Preview" class="project-thumb"/>
         <h3>Weather Dashboard</h3>
         <p>Fetches weather data using OpenWeatherMap API with real-time updates.</p>
+        <a href="#" class="btn">View Live</a>
       </div>
     </div>
   </section>
@@ -75,9 +90,22 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-    document.getElementById('theme-toggle').addEventListener('click', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      themeIcon.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+      themeIcon.textContent = '☀️';
+    }
   </script>
 </body>
 </html>
